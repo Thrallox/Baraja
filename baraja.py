@@ -2,7 +2,7 @@ import random
 
 
 
-def creaBaraja():
+def creaBaraja(palos, numeros):
     baraja = []
     for palo in palos: 
         for numero in numeros:
@@ -21,6 +21,9 @@ def intercambio(primer_valor,segundo_valor):
 def barajar(lista_de_naipes):
     for i in range (len(lista_de_naipes)):
         nueva_pos = random.randrange(len(lista_de_naipes))
+        '''
+        Intercambio de cartas, tecnica vaso vacío
+        '''
         aux = lista_de_naipes[nueva_pos]
         lista_de_naipes[nueva_pos] = lista_de_naipes[i]
         lista_de_naipes[i] = aux
