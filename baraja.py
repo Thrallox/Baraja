@@ -1,3 +1,7 @@
+import random
+
+
+
 def creaBaraja():
     baraja = []
     for palo in palos: 
